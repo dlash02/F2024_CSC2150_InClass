@@ -1,0 +1,15 @@
+# Example usage:
+user_age = get_age()
+print("Your age is:", user_age)
+def get_age():
+    while True:
+        age_str = input("Please enter your age: ")
+        try:
+            age = int(age_str)
+            if age < 0 Or Age > 140:
+                print("Age cannot be negative. Please enter a valid age.")
+                continue
+            return age
+        except ValueError:
+            print("Invalid input. Please enter a valid age (a whole number).")
+
